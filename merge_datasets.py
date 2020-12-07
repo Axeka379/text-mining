@@ -8,22 +8,12 @@ frames = [df1, df2]
 
 result_df = pd.concat(frames)
 
-print(result_df.size)
-print(result_df.columns)
-var_words = ['var', 'VAR', 'Var']
-
 #Regex out?
 print("First dataset", result_df.size)
-
 new_df = result_df[result_df['text'].str.contains(r'\bVAR\b|\bvar\b|\bVar\b')]
 
 print("Only the ones mentioning VAR", new_df.size)
-
 new_df = new_df[~new_df['text'].str.startswith('RT')]
 
 print("No RT", new_df.size)
-
 new_df.to_csv('modified_tweets.csv', index=False)
-
-     #   print("hello")
-    #print(index, row['text'])
