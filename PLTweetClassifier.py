@@ -1,10 +1,23 @@
 import pandas as pd
 import bz2
 
-df1 = pd.read_csv("2020-07-09_from_2020-09-19.csv")
-df2 = pd.read_csv("2020-09-20_from_2020-10-13.csv")
+df = pd.read_csv("modified_tweets.csv")
        
-print(df1.size)
-print(df2.size)
+print(df.size)
 
+'''
+for index, row in df1.iterrows():
+    if "VAR" in row['text'] and "RT" not in row['text'][0:2]:
+        print(index, row['text'])
+        #print(index, row['text']) 
+'''
+
+print(df)
+#test_df = df.groupby('partition_1').value_counts()
+test_df = df['file_name'].value_counts()
+
+print(test_df)
+
+
+#print(result.size)
 
