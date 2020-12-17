@@ -21,7 +21,7 @@ print(new_df['file_name'].value_counts())
 #print("Only the ones mentioning VAR", new_df.size)
 new_df = new_df[~new_df['text'].str.startswith('RT')]
 
-print(new_df['file_name'].value_counts().plot(kind='bar', rot=0))
+print(new_df['file_name'].value_counts())
 print(new_df.shape)
 '''
 
