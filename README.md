@@ -9,7 +9,7 @@ This work conducts a sentiment analysis on Premier League supporters opinion on 
 
 
 ## Files
-The relevant code for filtering data, training models, classifying etc, can be found in the python notebook PLTweetclassifier.
+The relevant code for filtering data, training models, classifying etc, can be found in the python notebook PLTweetclassifier. Most of the work done was performed using google colab. 
 
 There also exists some python files which where used to merge datasets together into one. 
 
